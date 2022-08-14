@@ -19,14 +19,12 @@ const PostForm = ({ create }) => {
   return (
     <form className="form">
       <InputText
-        className="inputText"
         type="text"
         placeholder="Название"
         value={post.title}
         onChange={(e) => setPost({ ...post, title: e.target.value })}
       />
       <InputText
-        className="inputText"
         type="text"
         placeholder="Задача"
         value={post.body}

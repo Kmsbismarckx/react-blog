@@ -1,0 +1,142 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #ccc;
+  font-size: 200%;
+}
+
+#root {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.App {
+  width: 800px;
+}
+.App .list .list__item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  border: 2px solid #49efff;
+}
+.App .myModal {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  display: none;
+  background: rgba(0, 0, 0, 0.5);
+}
+.App .myModalContent {
+  padding: 25px;
+  background: white;
+  border-radius: 16px;
+  min-width: 250px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.App .myModalActive {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.App .post-enter {
+  transform: translateX(-100%);
+  opacity: 0;
+  transition: all 500ms ease;
+}
+.App .post-enter-active {
+  transform: translateX(0%);
+  transition: all 500ms ease-in;
+  opacity: 1;
+}
+.App .post-exit {
+  transition: all 500ms ease;
+  opacity: 0;
+}
+.App .post-exit-active {
+  transform: translateX(-100%);
+  transition: all 500ms ease-in;
+}
+.App .loader {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  border: 3px dashed #49efff;
+  animation: rotate 5s infinite linear;
+}
+@keyframes rotate {
+  from {
+    transform: rotate(0deg) scale(1);
+  }
+  to {
+    transform: rotate(360deg) scale(2);
+  }
+}
+.App .page__wrapper {
+  margin-top: 30px;
+  display: flex;
+}
+.App .page__wrapper .page {
+  padding: 10px;
+  border: 1px solid #49efff;
+  cursor: pointer;
+}
+.App .page__wrapper .page__current {
+  border: 2px solid orange;
+  font-weight: bold;
+}
+.App .post__btns {
+  display: flex;
+  flex-direction: column;
+}
+
+.form {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.input-text {
+  width: 100%;
+  padding: 5px 15px;
+  margin: 5px 0;
+  border: 1px solid #49efff;
+}
+
+.btn {
+  padding: 5px 15px;
+  border: 1px solid #49efff;
+}
+
+.btn:active {
+  transform: scale(0.9);
+  background-color: #00cee2;
+}
+
+.navbar {
+  height: 50px;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  padding: 0 15px;
+  background-color: lightgray;
+}
+
+.navbar__links {
+  margin-left: auto;
+}
+
+/*# sourceMappingURL=style.css.map */

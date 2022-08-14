@@ -21,19 +21,6 @@ body {
 .App {
     width: 800px;
 
-    .form {
-        display: flex;
-        justify-content: space-between;
-        flex-wrap: wrap;
-        align-items: center;
-        .inputText {
-            width: 100%;
-            padding: 5px 15px;
-            margin: 5px 0;
-            border: 1px solid $blue;
-        }
-    }
-
     .list {
 
         .list__item {
@@ -47,15 +34,7 @@ body {
         }
     }
 
-    .btn {
-        padding: 5px 15px;
-        border: 1px solid $blue;
-    }
 
-    .btn:active {
-        transform: scale(0.9);
-        background-color: darken($blue, 20%);
-    }
 
     .myModal {
         position: fixed;
@@ -143,6 +122,29 @@ body {
     }
 
 
+}
+
+.form {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+
+}
+.input-text {
+    width: 100%;
+    padding: 5px 15px;
+    margin: 5px 0;
+    border: 1px solid $blue;
+}
+.btn {
+     padding: 5px 15px;
+     border: 1px solid $blue;
+ }
+
+.btn:active {
+    transform: scale(0.9);
+    background-color: darken($blue, 20%);
 }
 
 .navbar {
